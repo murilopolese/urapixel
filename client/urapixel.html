@@ -7,6 +7,7 @@
 </body>
 
 <template name="pixels">
+    <div class="pixels">
     {{#each pixel}}
         {{#if isYou id }}
             <div id="{{id}}" class="pixel you" style="top: {{y}}px; left: {{x}}px; background: {{color}}">:)</div>
@@ -14,4 +15,14 @@
             <div id="{{id}}" class="pixel" style="top: {{y}}px; left: {{x}}px; background: {{color}}"></div>
         {{/if}}
     {{/each}}
+    </div>
+    <div class="help">
+        <a>Não entendeu?</a>
+        <p>
+            Não tem muito o que entender... 
+        </p>
+        <p>
+            Use as teclas W, A, S e D para movimentar o seu pixel.
+        </p>
+    </div>
 </template>

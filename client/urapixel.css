@@ -1,6 +1,9 @@
 body {
     background: #000;
 }
+.pixels {
+    z-index: 1;
+}
 .pixel {
     position: absolute;
     width: 20px;
@@ -11,4 +14,14 @@ body {
 }
 .you {
     background: red;
+}
+.help {
+    position: absolute;
+    background: #000000;
+    width: 200px;
+    color: white;
+    z-index: 2;
+}
+.help p {
+    display: none;
 }

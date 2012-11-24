@@ -9,6 +9,9 @@ var interval;
 Meteor.startup(function() {
     console.log('começou cliente');
     Meteor.call('addPixel', p);
+    $('.help').click(function() {
+        $('.help p').toggle();
+    })
     $(document).keypress(function(e) {
         clearInterval(interval);
         if(e.charCode == 119) { // w
