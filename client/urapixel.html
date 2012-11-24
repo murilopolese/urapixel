@@ -1,0 +1,17 @@
+    <head>
+    <title>U R A PIXEL</title>
+</head>
+
+<body>
+    {{> pixels}}
+</body>
+
+<template name="pixels">
+    {{#each pixel}}
+        {{#if isYou id }}
+            <div id="{{id}}" class="pixel you" style="top: {{y}}px; left: {{x}}px; background: {{color}}">:)</div>
+        {{else}}    
+            <div id="{{id}}" class="pixel" style="top: {{y}}px; left: {{x}}px; background: {{color}}"></div>
+        {{/if}}
+    {{/each}}
+</template>

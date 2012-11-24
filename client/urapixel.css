@@ -1,0 +1,14 @@
+body {
+    background: #000;
+}
+.pixel {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.other {
+    background: black;
+}
+.you {
+    background: red;
+}
