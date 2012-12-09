@@ -1,4 +1,4 @@
-    <head>
+<head>
     <title>U R A PIXEL</title>
 </head>
 
@@ -8,21 +8,40 @@
 
 <template name="pixels">
     <div class="pixels">
-    {{#each pixel}}
+        {{#each pixel}}
         {{#if isYou id }}
-            <div id="{{id}}" class="pixel you" style="top: {{y}}px; left: {{x}}px; background: {{color}}">:)</div>
+        <div id="{{id}}" class="pixel you" style="top: {{y}}px; left: {{x}}px; background: {{color}}">:)</div>
         {{else}}    
-            <div id="{{id}}" class="pixel" style="top: {{y}}px; left: {{x}}px; background: {{color}}"></div>
+        <div id="{{id}}" class="pixel" style="top: {{y}}px; left: {{x}}px; background: {{color}}"></div>
         {{/if}}
-    {{/each}}
+        {{/each}}
     </div>
     <div class="help">
-        <a>Não entendeu?</a>
+        <a>Não entendeu? Clique aqui.</a>
         <p>
             Não tem muito o que entender... 
         </p>
         <p>
-            Use as teclas W, A, S e D para movimentar o seu pixel.
+            você é um pixel
+        </p>
+        <p>
+            se move com A, S, D, W
+        </p>
+        <p>
+            e é isso
+        </p>
+        <p>
+            você pode se juntar com outros pixels,
+        </p>
+        <p>
+            ficar em um lugar aleatório
+        </p>
+        <p>
+            ou ir andando pro infinito e chegar onde ninugém nunca chegou
+        </p>
+        <p>
+            toda vez que você entra, gera um pixel novo 
+            e você só pode controlar ele
         </p>
     </div>
 </template>

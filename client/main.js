@@ -7,7 +7,6 @@ var p = {
 var key = '';
 var interval;
 Meteor.startup(function() {
-    console.log('começou cliente');
     Meteor.call('addPixel', p);
     $('.help').click(function() {
         $('.help p').toggle();
@@ -30,9 +29,7 @@ Meteor.startup(function() {
             top: p.y+'px',
             left: p.x+'px'
         })
-        interval = setTimeout(function() {
-            Meteor.call('updatePixel', p);
-        }, 500)
+        Meteor.call('updatePixel', p);
     })
 })
 
