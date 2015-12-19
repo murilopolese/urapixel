@@ -1,9 +1,8 @@
 urapixel
 ========
 
-You are a pixel and you can move to make a cluster with other pixels. Or not.
+![](http://i.imgur.com/ys1CdmG.png)
 
-http://urapixel.meteor.com/
+You are a pixel and you can move around using `w`, `a`, `s`, `d` or arrow keys.
 
-
-artwells:accounts-guest
+http://fabulous-pixel.herokuapp.com/
