@@ -1,1 +1,0 @@
-P = new Meteor.Collection('pixels');
